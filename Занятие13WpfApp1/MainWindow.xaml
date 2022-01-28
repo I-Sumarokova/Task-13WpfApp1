@@ -35,16 +35,8 @@
 
         <ToolBarTray Grid.Row="2" Style="{DynamicResource ToolBarStyle}">
             <ToolBar Style="{DynamicResource ToolBarStyle}">
-                <ComboBox x:Name="cmb1" SelectedIndex="0" Width="200" Style="{DynamicResource ComboBoxStyle}">
-                    <TextBlock Text="Arial"/>
-                    <TextBlock Text="Times New Roman"/>
-                    <TextBlock Text="Verdana"/>
-                    </ComboBox>
-                <ComboBox x:Name="cmb2" SelectedIndex="2" Width="50" Style="{DynamicResource ComboBoxStyle}">
-                    <TextBlock Text="12"/>
-                    <TextBlock Text="14"/>
-                    <TextBlock Text="16"/>
-                </ComboBox>
+                <ComboBox x:Name="cmb1" SelectedIndex="0" Width="200" Style="{DynamicResource ComboBoxStyle}" ItemsSource="{StaticResource styles}"/>
+                <ComboBox x:Name="cmb2" SelectedIndex="2" Width="50" Style="{DynamicResource ComboBoxStyle}" ItemsSource="{StaticResource sizes}"/>
             </ToolBar>
             <ToolBar Style="{DynamicResource ToolBarStyle}">
                 <Button Click="Button_Click" Style="{DynamicResource ButtonStyle}">
